@@ -1,3 +1,4 @@
+BETTY_STYLE = "betty-style"
 #include <stdio.h>
 
 /**
