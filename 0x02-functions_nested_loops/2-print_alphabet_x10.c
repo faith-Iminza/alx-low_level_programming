@@ -15,7 +15,9 @@ while (count < 10)
 	{
 		_putchar(alphabet);
 	}
-count++
+count++;
 _putchar('\n');
-}
+
+															}
+
 }
