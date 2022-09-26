@@ -5,25 +5,27 @@
  * @needle: searched in haystack
  * Return: return 0
  **/
-
-char  *_strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
-char *str1, *str2; /*Declaring variables*/
+/**
+ * we initialize a helping variable
+ * to assist in returning one of
+ * our parameters pointers haystack
+ */
+char *h, *n;
 
 while (*haystack != '\0')
 {
-	str1 = haystack; /*values*/
-	str2 = needle;
-
-	/*Star WHILE*/
-	while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
+	h = haystack;
+	n = needle;
+	while (*n != '\0' && *haystack == *n)
 	{
 		haystack++;
-		str2++;
+		n++;
 	}
-	if (*str2 == '\0')
-		return (str1);
-		haystack = str1 + 1;
+	if (!*n)
+		return (h);
+haystack++;
 }
-return (0);
+return ('\0');
 }
