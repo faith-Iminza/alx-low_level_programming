@@ -1,2 +1,1 @@
-# alx-low_level_programming
-introduction to C programming
+readme of the debugging directory
