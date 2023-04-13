@@ -1,1 +1,1 @@
-readme of the debugging directory
+tasks on search_algorithms
